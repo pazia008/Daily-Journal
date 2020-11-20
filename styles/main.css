@@ -1,0 +1,75 @@
+    body {
+        background-color: rgb(241, 202, 215);
+    }
+    
+    .logo {
+        height: 165px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .headline {
+        font-size: 25px;
+        text-align: center;
+        margin-top: -25px;
+        font-style: italic;
+        color: rgb(54, 53, 53);
+    }
+    
+    footer {
+        text-align: center;
+        color: rgb(24, 23, 23);
+    }
+    
+    a {
+        color: rgb(99, 94, 94);
+    }
+    
+    a:hover {
+        color: white;
+    }
+    
+    .dates {
+        text-align: center;
+    }
+    
+    .concepts {
+        text-align: center;
+    }
+    
+    .journals {
+        text-align: center;
+    }
+    
+    .moods {
+        text-align: center;
+    }
+    
+    .buttons {
+        text-align: center;
+    }
+    
+    fieldset {
+        border: 1px dotted white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    button {
+        border-color: rgb(80, 78, 78);
+        color: white;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 12px;
+        background-color: rgb(241, 202, 215);
+        transition-duration: 0.4s;
+        width: 150px;
+        height: 50px;
+        margin-left: 41%;
+        margin-top: 5px;
+    }
+    
+    button:hover {
+        background-color: rgb(80, 78, 78);
+    }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<header>
+    <div><img class="logo" src="./styles/images/dailyjournal.png" alt="logo"></div>
+    <h1 class="headline">Pazia Ramirez</h1>
+</header>
+
+<body>
+    <main>
+        <article class="dates">
+            <section class="date">
+                <form action="">
+                    <fieldset>
+                        <label for="journalDate">Date:</label>
+                        <input type="date" name="journalDate" id="journalDate">
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <article class="concepts">
+            <section class="concept">
+                <form action="">
+                    <fieldset>
+                        <label for="conceptsCovered">Concepts Covered:</label>
+                        <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <article class="journals">
+            <section class="journal">
+                <form action="">
+                    <fieldset>
+                        <label for="journalEntry">Journal Entry:</label>
+                        <!-- <input type="text" name="journalEntry" id="journalEntry" maxlength=""> leaving just in case-->
+                        <textarea rows=""></textarea>
+                    </fieldset>
+                </form>
+            </section>
+
+        </article>
+        <article class="moods">
+            <section class="mood">
+                <form>
+                    <fieldset>
+                        <label for="moodChart">Mood For The Day:</label>
+                        <select name="feeling" id="awesome">
+                            <option value="awesome">Awesome!!! :)</option>
+                                <option value="meh">Meh :/</option>
+                                    <option value="no">Not feelin' it today :(</option>
+                        </select>
+
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <button type="button">Record Journal Entry</button>
+        <!-- <article class="buttons">
+            <section class="button">
+                <form>
+                    <fieldset>
+                        <input type="button" onclick="alert('Journal Entry Recorded')" value="Record Journal Entry">
+                    </fieldset>
+                </form>
+            </section>
+        </article> default button -->
+    </main>
+    <footer>Pazia Ramirez <a href="https://github.com/pazia008"> github profile </a></footer>
+</body>
+
+</html>
