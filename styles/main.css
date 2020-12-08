@@ -67,8 +67,10 @@
         transition-duration: 0.4s;
         width: 150px;
         height: 50px;
-        margin-left: 41%;
+        margin: auto;
         margin-top: 10px;
+        text-align: center;
+        display: flex;
     }
     
     button:hover {
