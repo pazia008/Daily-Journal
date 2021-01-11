@@ -47,7 +47,7 @@ export const journalForms = () => {
                                 <option value="Meh :/">Meh :/</option>
                                     <option value="Not feelin' it today :(">Not feelin' it today :(</option>
                          </select>
-
+                         
                     </fieldset>
                 </form>
             </section>

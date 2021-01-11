@@ -14,7 +14,8 @@ export const EntryListComponent = () => {
     // Use the journal entry data from the data provider component
     getEntries()
         .then(() => {
-            let entryHTML //starting at zero
+            debugger
+            let entryHTML = "" //starting at zero
             let useEntry = useJournalEntries()
             for (const entry of useEntry) {
                 entryHTML += JournalEntryComponent(entry) //adds on to let entryHtml
