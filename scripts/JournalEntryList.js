@@ -14,13 +14,13 @@ export const EntryListComponent = () => {
     // Use the journal entry data from the data provider component
     getEntries()
         .then(() => {
-            debugger
+
             let entryHTML = "" //starting at zero
             let useEntry = useJournalEntries()
             for (const entry of useEntry) {
                 entryHTML += JournalEntryComponent(entry) //adds on to let entryHtml
             }
-            entryLog.innerHTML = entryHTML // never put in a for loop
+            entryLog.innerHTML = entryHTML // never put innerHtml in a for loop
         })
 
 }
