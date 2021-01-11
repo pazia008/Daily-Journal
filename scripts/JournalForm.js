@@ -1,5 +1,7 @@
-const contentTarget = document.querySelector(".journalForm")
+import { saveJournalEntry } from "./JournalDataProvider.js"
 
+const contentTarget = document.querySelector(".journalForm")
+const eventHub = document.querySelector(".container")
 export const journalForms = () => {
     contentTarget.innerHTML = `
     <article class="dates">
@@ -7,7 +9,7 @@ export const journalForms = () => {
                 <form action="">
                     <fieldset>
                         <label for="journalDate">Date:</label>
-                        <input type="date" name="journalDate" id="journalDate">
+                        <input type="date" name="journalDate" id="date">
                     </fieldset>
                 </form>
             </section>
@@ -29,7 +31,7 @@ export const journalForms = () => {
 
                         <label for="journalEntry">Journal Entry:</label>
 
-                        <textarea rows=""></textarea>
+                        <textarea id= "journalEntry" rows=""></textarea>
                     </fieldset>
                 </form>
             </section>
@@ -40,17 +42,35 @@ export const journalForms = () => {
                 <form>
                     <fieldset>
                         <label for="moodChart">Mood For The Day:</label>
-                        <select name="feeling" id="awesome">
-                            <option value="awesome">Awesome!!! :)</option>
-                                <option value="meh">Meh :/</option>
-                                    <option value="no">Not feelin' it today :(</option>
+                        <select name="feeling" id="mood">
+                            <option value="Awesome!!! :)">Awesome!!! :)</option>
+                                <option value="Meh :/">Meh :/</option>
+                                    <option value="Not feelin' it today :(">Not feelin' it today :(</option>
                          </select>
 
                     </fieldset>
                 </form>
             </section>
         </article>
-        <button type="button">Record Journal Entry</button>
+        <button id="saveJournalEntry">Record Journal Entry</button>
         
     `
 }
+
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "saveJournalEntry") {
+        const concept = document.querySelector("#conceptsCovered").value
+        const entry = document.querySelector("#journalEntry").value
+        const mood = document.querySelector("#mood").value
+        const date = document.querySelector("#date").value
+
+        const newEntry = {
+            concept: concept,
+            entry: entry,
+            mood: mood,
+            date: date
+
+        }
+        saveJournalEntry(newEntry)
+    }
+})

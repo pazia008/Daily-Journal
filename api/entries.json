@@ -1,9 +1,18 @@
 {
-    "entries": [{
-        "id": 1,
-        "concept": "Array methods",
-        "date": "08/06/19",
-        "entry": "We learned about array methods.",
-        "mood": "Meh :/"
-    }]
+  "entries": [
+    {
+      "id": 1,
+      "concept": "Array methods",
+      "date": "2019-06-11",
+      "entry": "We learned about array methods.",
+      "mood": "Meh :/"
+    },
+    {
+      "concept": "how to delete entries",
+      "entry": "I felt powerful",
+      "mood": "Awesome!!! :)",
+      "date": "2021-01-20",
+      "id": 2
+    }
+  ]
 }
